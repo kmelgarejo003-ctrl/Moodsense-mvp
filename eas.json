@@ -1,14 +1,13 @@
 {
-  "cli": {
-    "version": ">= 5.9.1",
-    "packageManager": "npm"
-  },
   "build": {
     "production": {
       "android": {
         "buildType": "apk"
       },
-      "node": "18.18.0"
+      "node": "18.18.0",
+      "npm": {
+        "legacyPeerDeps": true
+      }
     }
   }
 }
