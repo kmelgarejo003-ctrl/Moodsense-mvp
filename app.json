@@ -16,22 +16,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "app.modosense.mvp",
-      "permissions": [
-        "CAMERA",
-        "RECORD_AUDIO",
-        "FOREGROUND_SERVICE",
-        "FOREGROUND_SERVICE_CAMERA",
-        "FOREGROUND_SERVICE_MICROPHONE",
-        "WAKE_LOCK",
-        "POST_NOTIFICATIONS"
-      ]
+      "package": "app.modosense.mvp"
     },
     "plugins": [
-      ["react-native-vision-camera", {
-        "cameraPermissionText": "Modo Sense usa la cámara para detectar tensión facial"
-      }],
-      ["expo-notifications"]
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#6366f1"
+        }
+      ]
     ],
     "extra": {
       "eas": {
