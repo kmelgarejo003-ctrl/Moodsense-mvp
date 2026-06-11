@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Modo Sense",
+    "slug": "modosense-mvp",
+    "version": "1.0.0",
+    "android": {
+      "package": "app.modosense.mvp",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_CAMERA",
+        "FOREGROUND_SERVICE_MICROPHONE",
+        "WAKE_LOCK",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      ["react-native-vision-camera", {
+        "cameraPermissionText": "Modo Sense usa la cámara para detectar tensión facial"
+      }],
+      ["expo-notifications"]
+    ]
+  }
+}
