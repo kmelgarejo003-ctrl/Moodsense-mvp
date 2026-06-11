@@ -1,9 +1,22 @@
+
 {
   "expo": {
     "name": "Modo Sense",
     "slug": "modosense-mvp",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
       "package": "app.modosense.mvp",
       "permissions": [
         "CAMERA",
@@ -20,6 +33,11 @@
         "cameraPermissionText": "Modo Sense usa la cámara para detectar tensión facial"
       }],
       ["expo-notifications"]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "Modo Sense-mvp"
+      }
+    }
   }
 }
