@@ -1,43 +1,17 @@
 {
-  "expo": {
-    "name": "Modo Sense",
-    "slug": "sensemood",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "icon": null,
-    "splash": {
-      "image": null
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": null,
-        "backgroundColor": "#ffffff"
-      },
-      "package": "app.modosense.mvp",
-      "permissions": [
-        "CAMERA",
-        "RECORD_AUDIO",
-        "FOREGROUND_SERVICE",
-        "FOREGROUND_SERVICE_CAMERA",
-        "FOREGROUND_SERVICE_MICROPHONE",
-        "WAKE_LOCK",
-        "POST_NOTIFICATIONS"
-      ]
-    },
-    "plugins": [
-      [
-        "react-native-vision-camera",
-        {
-          "cameraPermissionText": "Modo Sense usa la cámara para detectar tensión facial"
-        }
-      ],
-      ["expo-notifications"]
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "b1224479-1e63-4373-b28d-9a9587b329cd"
-      }
-    }
+  "name": "modosense-mvp",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": { "start": "expo start" },
+  "dependencies": {
+    "expo": "~51.0.28",
+    "expo-camera": "~15.0.16",
+    "expo-notifications": "~0.28.16",
+    "expo-task-manager": "~11.8.2",
+    "expo-background-fetch": "~12.0.2",
+    "react-native-vision-camera": "3.6.17",
+    "react-native-worklets-core": "1.3.3",
+    "react": "18.2.0",
+    "react-native": "0.74.5"
   }
 }
